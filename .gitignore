@@ -16,6 +16,20 @@ venv/
 *.bak
 *.swp
 
+# Private dataset and tabular exports
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.joblib
+*.npz
+
+# Keep the public data-policy documentation tracked
+!data/README.md
+
 # Large local exports / intermediate files
 results_tmp/
 exports_tmp/
+raw_exports/
+private_data/
