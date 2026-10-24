@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Simulation-generated / temporary files
+*.raw
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Large local exports / intermediate files
+results_tmp/
+exports_tmp/
