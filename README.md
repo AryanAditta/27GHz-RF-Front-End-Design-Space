@@ -4,7 +4,7 @@ Design-space generation and simulation-based characterization of 27 GHz SiGe RF 
 
 ## Project scope
 
-This repository organizes a growing RF front-end dataset across four circuit families:
+This repository documents a growing RF front-end design-space study across four circuit families:
 
 | Circuit family | Role | Current status |
 |---|---|---|
@@ -13,7 +13,7 @@ This repository organizes a growing RF front-end dataset across four circuit fam
 | Common-Emitter LNA | Receiver / low-noise amplifier | Design and dataset expansion in progress |
 | Cascode LNA | Receiver / low-noise amplifier | Planned extension |
 
-The workflow varies circuit-level design parameters such as bias, transistor sizing, RF choke values and matching-network components, then records RF performance obtained from simulation. The resulting structured input-output dataset is intended to support later analysis, surrogate modeling and design-space exploration.
+The workflow varies circuit-level design parameters such as bias, transistor sizing, RF choke values and matching-network components, then records RF performance obtained from simulation. A structured input-output dataset is being generated privately to support later analysis, surrogate modeling and design-space exploration.
 
 ## Technology and tools
 
@@ -23,7 +23,7 @@ The workflow varies circuit-level design parameters such as bias, transistor siz
 - **Small-signal / noise simulation:** ngspice
 - **Large-signal / harmonic-balance simulation:** Xyce
 - **Post-processing:** Python
-- **Dataset tracking:** tabular design-parameter / performance records
+- **Dataset tracking:** private tabular design-parameter / performance records
 
 ## Repository structure
 
@@ -39,10 +39,7 @@ The workflow varies circuit-level design parameters such as bias, transistor siz
 │   └── cascode_lna/
 │       └── figures/
 ├── data/
-│   ├── ce_pa/
-│   ├── cascode_pa/
-│   ├── ce_lna/
-│   └── cascode_lna/
+│   └── README.md
 ├── scripts/
 ├── docs/
 └── README.md
@@ -68,7 +65,7 @@ Planned low-noise cascode extension for comparative front-end design-space gener
 
 ## Dataset concept
 
-Each sample corresponds to one circuit configuration:
+Each private dataset sample corresponds to one circuit configuration:
 
 ```text
 circuit parameters
@@ -82,9 +79,11 @@ structured dataset row
 
 Typical input variables include bias voltages, transistor multipliers, RF-choke values and matching-network components. Typical response variables include gain, noise metrics, stability/matching quantities and output 1-dB compression behavior, depending on topology.
 
+The underlying dataset is **not publicly released in this repository**. Public materials are limited to selected circuit schematics, workflow documentation, figures and non-sensitive analysis code where appropriate.
+
 ## Current development status
 
-The PA branches are currently the most mature. The LNA branches are being added progressively, with CE LNA preceding the cascode-LNA extension. Dataset contents and reproducible post-processing scripts will be added as the validation workflow is finalized.
+The PA branches are currently the most mature. The LNA branches are being added progressively, with CE LNA preceding the cascode-LNA extension. Public documentation and reproducible post-processing material will be added as the validation workflow is finalized.
 
 ## Notes
 
