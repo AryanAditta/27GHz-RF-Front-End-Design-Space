@@ -1,9 +1,11 @@
 # Cascode PA Figures
 
-Place public cascode PA visuals here using stable names such as:
+Public schematic and simulation views for the cascode PA branch.
 
-- `cascode_pa_topology.png`
-- `cascode_pa_small_signal.png`
-- `cascode_pa_large_signal.png`
+Current files:
 
-Prefer publication-quality exports without temporary annotations or unpublished numerical tables.
+- `Cascode PA Skeleton.png` — stacked CE/CB cascode circuit skeleton
+- `Small Signal Analysis.png` — small-signal RF analysis setup
+- `Large Signal Analysis.png` — large-signal / harmonic-balance analysis setup
+
+These figures document the simulation workflow only. The associated numerical design-space dataset remains private.
