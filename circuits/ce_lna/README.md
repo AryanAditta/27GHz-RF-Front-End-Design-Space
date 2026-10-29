@@ -4,7 +4,7 @@
 
 ## Baseline topology
 
-![CE LNA schematic](figures/CE_LNA_Schematic.webp)
+![CE LNA schematic](figures/CE_LNA_Schematic.png)
 
 The baseline schematic includes:
 
@@ -15,30 +15,28 @@ The baseline schematic includes:
 
 ## Small-signal characterization
 
-![CE LNA small-signal analysis](figures/CE_LNA_Small_Signal_Analysis.webp)
+![CE LNA small-signal analysis](figures/CE_LNA_Small_Signal_Analysis.png)
 
 The small-signal validation view documents the simulated gain, input/output matching, noise behavior and Smith-chart response around the 27 GHz design frequency. These results are simulation-based and are used to verify a candidate configuration before design-space sampling.
 
 ## Large-signal characterization
 
-![CE LNA harmonic-balance analysis](figures/CE_LNA_Large_Signal_Analysis.webp)
+![CE LNA large-signal analysis](figures/CE_LNA_Large_Signal_Analysis.png)
 
-Harmonic-balance simulation is used to examine the nonlinear response of the same CE LNA configuration. The input-power sweep is post-processed in Python to obtain compression and efficiency trends.
+Large-signal harmonic-balance analysis is used to inspect spectral response and nonlinear behavior as input drive is increased.
 
-### 1 dB compression
+### Output compression
 
-![CE LNA OP1dB sweep](figures/CE_LNA_OP1dB.webp)
+![CE LNA OP1dB](figures/CE_LNA_OP1dB.png)
 
-The plotted operating point marks the extracted 1 dB compression region from the Fourier-coefficient power sweep.
+The power sweep tracks output power versus input power and identifies the simulated 1 dB compression region using post-processed Fourier-coefficient data.
 
 ### Power-added efficiency
 
-![CE LNA PAE sweep](figures/CE_LNA_PAE.webp)
+![CE LNA PAE](figures/CE_LNA_PAE.png)
 
-PAE is evaluated across the same input-power sweep to show the efficiency trend as the amplifier approaches and enters compression.
+PAE is evaluated across the same large-signal sweep to document the efficiency trend as the amplifier moves from small-signal operation toward compression.
 
-## Design-space role
+## Characterization focus
 
-The CE LNA branch is now part of the validated simulation workflow used for systematic parameter-performance data generation. Bias, transistor sizing, emitter degeneration, RF choke and matching-network values are varied while retaining DC, small-signal/noise, matching, stability and large-signal checks.
-
-The numerical design-space dataset remains private; this repository contains selected schematics, analysis views and methodology only.
+The CE LNA branch is intended for systematic design-space generation rather than presentation of a single optimized point. The public repository therefore shows selected validation views, while the numerical parameter-performance dataset remains private.
