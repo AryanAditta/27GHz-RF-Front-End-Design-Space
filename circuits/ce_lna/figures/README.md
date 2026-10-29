@@ -1,13 +1,11 @@
 # CE LNA Figures
 
-Validated 27 GHz common-emitter LNA figures used by the public documentation.
+Validated public-facing figures for the 27 GHz common-emitter LNA branch:
 
-| File | Description |
-|---|---|
-| `CE_LNA_Schematic.webp` | Baseline common-emitter LNA schematic |
-| `CE_LNA_Small_Signal_Analysis.webp` | Small-signal, matching, noise and Smith-chart analysis |
-| `CE_LNA_Large_Signal_Analysis.webp` | Harmonic-balance / large-signal analysis setup and spectra |
-| `CE_LNA_OP1dB.webp` | Input-power sweep with extracted 1 dB compression point |
-| `CE_LNA_PAE.webp` | Power-added-efficiency sweep |
+- `CE_LNA_Schematic.png` — baseline Qucs-S schematic;
+- `CE_LNA_Small_Signal_Analysis.png` — gain, matching, noise and Smith-chart validation;
+- `CE_LNA_Large_Signal_Analysis.png` — harmonic-balance spectral analysis;
+- `CE_LNA_OP1dB.png` — output-power sweep and simulated 1 dB compression point;
+- `CE_LNA_PAE.png` — power-added-efficiency trend across the large-signal sweep.
 
-All figures are simulation-based.
+These figures are simulation-based and are provided for engineering documentation. The underlying numerical design-space dataset is not publicly distributed.
