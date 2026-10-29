@@ -2,6 +2,9 @@
 
 Simulation-based design-space generation for 27 GHz SiGe RF front-end amplifier topologies using the **IHP SG13G2 130 nm SiGe BiCMOS Open PDK**.
 
+**Research context:** Mentored research with **Sultan Muhammad Ikram, RF/mmWave MMIC Designer, Neural Semiconductor Limited**.  
+**Research profile:** [RF/mmWave academic website](https://aryanaditta.github.io/rfic-academic/)
+
 This repository documents the public-facing engineering workflow, selected circuit schematics, analysis setups and project methodology. The underlying parameter-performance dataset is being developed separately and **is not publicly distributed**.
 
 ## Project scope
@@ -99,7 +102,9 @@ The numerical design-space dataset is **private research data** and is not inclu
 
 ## Research direction
 
-The immediate objective is systematic and reproducible RF circuit dataset generation rather than optimization of a single design point. As the dataset matures, it can support comparative topology analysis, surrogate modeling and ML-assisted RF design-space exploration.
+The immediate objective is systematic and reproducible RF circuit dataset generation rather than optimization of a single design point. As the dataset matures, it can support comparative topology analysis, surrogate modeling and future ML-assisted RFIC design exploration.
+
+This project complements my separate 28 GHz SiGe PA thesis work, which progresses from schematic RF design toward process-aware, EM-aware and full-custom physical realization.
 
 ## Note
 
@@ -108,5 +113,7 @@ All material currently shown here is **simulation-based**. Nothing in this repos
 ## Author
 
 **Arian Rahman Aditta**  
-B.Sc. in Electronics and Communication Engineering, KUET  
-Research interests: RF/mmWave IC design, analog/RF ICs, VLSI/EDA and ML-assisted hardware design
+B.Sc. Engineering in Electronics and Communication Engineering, KUET  
+Research interests: RF/mmWave IC design, analog/RF IC design, RFIC design automation, SiGe BiCMOS front-end circuits and ML-assisted hardware design
+
+[RF/mmWave Research Website](https://aryanaditta.github.io/rfic-academic/) · [RFIC CV](https://aryanaditta.github.io/rfic-academic/Arian_Rahman_Aditta_RFIC_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=Id4ByyUAAAAJ&hl=en)
