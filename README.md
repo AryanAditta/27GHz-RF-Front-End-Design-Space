@@ -65,13 +65,15 @@ Detailed schematic and analysis views: **[Cascode PA documentation](circuits/cas
 
 ### Common-Emitter LNA
 
-Inductively degenerated common-emitter SiGe HBT LNA with 27 GHz input/output matching, small-signal/noise validation and large-signal harmonic-balance characterization.
+The CE LNA branch now includes a documented 27 GHz baseline schematic, small-signal validation and large-signal characterization.
 
-![Common-Emitter LNA topology](circuits/ce_lna/figures/CE_LNA_Schematic.webp)
+![Common-Emitter LNA topology](circuits/ce_lna/figures/CE_LNA_Schematic.png)
 
 Detailed schematic and analysis views: **[CE LNA documentation](circuits/ce_lna/)**
 
-The **cascode LNA** remains a planned extension.
+### Cascode LNA
+
+The cascode LNA branch remains a planned extension and will be added as its circuit design and validation work is completed.
 
 ## Repository structure
 
