@@ -12,7 +12,7 @@ The project studies four RF amplifier families within one consistent simulation 
 |---|---|---|
 | [Common-Emitter PA](circuits/ce_pa/) | Transmitter / power amplifier | Active dataset generation |
 | [Cascode PA](circuits/cascode_pa/) | Transmitter / power amplifier | Initial baseline batch completed |
-| [Common-Emitter LNA](circuits/ce_lna/) | Receiver / low-noise amplifier | Next development phase |
+| [Common-Emitter LNA](circuits/ce_lna/) | Receiver / low-noise amplifier | Baseline small- and large-signal characterization documented |
 | [Cascode LNA](circuits/cascode_lna/) | Receiver / low-noise amplifier | Planned extension |
 
 The central idea is to vary physically meaningful circuit parameters—bias conditions, device sizing, RF choke values and matching-network components—then characterize each valid configuration through RF simulation and post-processing. These validated design-response pairs form a private structured dataset for later analysis and design-space exploration.
@@ -63,7 +63,15 @@ Detailed schematic and analysis views: **[Cascode PA documentation](circuits/cas
 
 ## LNA branches
 
-The **common-emitter LNA** and **cascode LNA** branches will be added progressively as their circuit design and validation work is completed. They are intentionally not represented here as finished results yet.
+### Common-Emitter LNA
+
+Inductively degenerated common-emitter SiGe HBT LNA with 27 GHz input/output matching, small-signal/noise validation and large-signal harmonic-balance characterization.
+
+![Common-Emitter LNA topology](circuits/ce_lna/figures/CE_LNA_Schematic.webp)
+
+Detailed schematic and analysis views: **[CE LNA documentation](circuits/ce_lna/)**
+
+The **cascode LNA** remains a planned extension.
 
 ## Repository structure
 
@@ -72,7 +80,7 @@ The **common-emitter LNA** and **cascode LNA** branches will be added progressiv
 ├── circuits/
 │   ├── ce_pa/          # CE PA documentation and figures
 │   ├── cascode_pa/     # Cascode PA documentation and figures
-│   ├── ce_lna/         # LNA development placeholder
+│   ├── ce_lna/         # CE LNA documentation and figures
 │   └── cascode_lna/    # Planned extension
 ├── data/
 │   └── README.md       # Private-dataset policy and schema notes
